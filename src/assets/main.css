@@ -1,0 +1,137 @@
+:root {
+  /* Color palette */
+  --c-white: #ffffff;
+  --c-white-soft: #f8f8f8;
+  --c-white-mute: #f2f2f2;
+
+  --c-black: #181818;
+  --c-black-soft: #222222;
+  --c-black-mute: #282828;
+
+  --c-light-grey: #f0f0f0;
+  --c-medium-light-grey: #c0c0c0;
+  --c-medium-grey: #a5a5a5;
+  --c-medium-dark-grey: #707070;
+  --c-medium-medium-dark-grey: #606060;
+  --c-dark-grey: #505050;
+  --c-strong-dark-grey: #484848;
+  --c-very-dark-grey: #404040;
+
+  --c-green: #2ecc3b;
+  --c-dark-green: #188847;
+
+  --c-dark-red: #993125;
+  --c-red: #e74c3c;
+
+  --c-dark-blue: #2b4e9e;
+  --c-blue: #3c6fe7;
+
+  --c-dark-yellow: #f39c12;
+  --c-medium-yellow: #f4d03f;
+  --c-yellow: #f1c40f;
+
+  --c-dark-orange: #d35400;
+  --c-orange: #e67e22;
+
+  /* Semantic colors */
+
+  --c-text: var(--c-black);
+  --c-text-light: var(--c-white);
+
+  --c-background: var(--c-white);
+  --c-menu-background: var(--c-dark-grey);
+  --c-menu-background-highlight: var(--c-medium-dark-grey);
+
+  --c-header: var(--c-very-dark-grey);
+  --c-header-selected-item: var(--c-medium-medium-dark-grey);
+
+  --c-footer: var(--c-medium-grey);
+  --c-footer-item-highlight: var(--c-medium-light-grey);
+
+  --c-list-item: var(--c-light-grey);
+  --c-list-item-highlighted: var(--c-medium-grey);
+
+  --c-box-shadow: rgba(0, 0, 0, 0.5);
+
+  --c-error-message: var(--c-red);
+
+  /* Buttons */
+
+  --c-base-button: var(--c-medium-dark-grey);
+  --c-base-button-highlighted: var(--c-medium-light-grey);
+
+  --c-action-button: var(--c-dark-green);
+  --c-action-button-highlighted: var(--c-green);
+
+  --c-dangerous-action-button: var(--c-dark-red);
+  --c-dangerous-action-button-highlighted: var(--c-red);
+
+  --c-confirm-button: var(--c-dark-green);
+  --c-confirm-button-highlighted: var(--c-green);
+
+  --c-cancel-button: var(--c-medium-grey);
+  --c-cancel-button-highlighted: var(--c-medium-light-grey);
+
+  --c-navigation-button: var(--c-dark-blue);
+  --c-navigation-button-highlighted: var(--c-blue);
+
+  --c-back-button: var(--c-medium-dark-grey);
+  --c-back-button-highlighted: var(--c-medium-light-grey);
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+.error-message {
+  color: var(--c-error-message);
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+/* Configure the vue-toastification messages */
+
+.Vue-Toastification__toast--success {
+  background-color: var(--c-dark-green) !important;
+  color: var(--c-white);
+}
+
+.Vue-Toastification__toast--error {
+  background-color: var(--c-dark-red) !important;
+  color: var(--c-white);
+}
+
+.Vue-Toastification__toast--warning {
+  background-color: var(--c-orange) !important;
+  color: var(--c-white);
+}
+
+.Vue-Toastification__toast--info {
+  background-color: var(--c-medium-yellow) !important;
+  color: var(--c-white);
+}
