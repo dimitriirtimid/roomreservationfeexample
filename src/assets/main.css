@@ -93,19 +93,6 @@ a,
   padding: 3px;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-}
-
 .error-message {
   color: var(--c-error-message);
   font-size: 0.8rem;
